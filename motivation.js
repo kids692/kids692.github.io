@@ -58,7 +58,7 @@ function answer6(){
   var response=prompt("write down your answer");
   if(response=="旮旯"){
     alert("right answer!");
-    score+=17;
+    score+=20;
   }
   else {
     alert("wrong answer");
