@@ -26,7 +26,7 @@ function answer1(){
     alert("wrong answer");
   }
 }
-function answer3(){
+function answer2(){
   var response=prompt("write down your answer");
   if(response=="周易"){
     alert("right answer!");
@@ -35,16 +35,16 @@ function answer3(){
   else {
     alert("wrong answer");
   }
-}function answer4(){
+}function answer3(){
   var response=prompt("write down your answer");
-  if(response=="明天冬" || "天门冬"){
+  if(response=="明天冬"||"天门冬"){
     alert("right answer!");
     score+=16;
   }
   else {
     alert("wrong answer");
   }
-}function answer5(){
+}function answer4(){
   var response=prompt("write down your answer");
   if(response=="八成熟"){
     alert("right answer!");
@@ -54,7 +54,7 @@ function answer3(){
     alert("wrong answer");
   }
 }
-function answer6(){
+function answer5(){
   var response=prompt("write down your answer");
   if(response=="旮旯"){
     alert("right answer!");
@@ -66,7 +66,7 @@ function answer6(){
 }
 function result(){
   if(score==100){
-    alert("Your score is "+score+" ,you are a brilliant guy！");
+    alert("Your score is "+score+" ,you are brilliant！");
   }
   if(score>10&score<=99){
     alert("Your score is "+score+" ,keep fighting!");
