@@ -1,0 +1,459 @@
+body{
+    background-color: transparent;
+}
+p,li{
+    font-family:"ZhanKuKuaiLeTi2016XiuDingBan-1" ;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* Navigation scroll*/
+#navbarNav{
+    padding-right: 2rem;
+}
+
+.navbar{
+    transition: 1s;
+}
+
+.nav{
+    color: #c286d4;
+    padding: 10px 20px;
+ }
+
+.navbar-brand{
+    color: #df85f5;
+    cursor: pointer;
+}
+
+/* navbar animation */
+.nav-item::after{
+    content:'';
+    display:block;
+    width:0px;
+    height:4px;
+    background:#e66fe0;
+    transition: 0.2s;
+    margin-top:-10px;
+}
+
+.nav-item:hover::after{width:100%;}
+
+
+.nav-link{
+    padding:15px 5px;
+    transition:0.2s;
+}
+
+.navbar-nav .nav-link {
+
+    font-size:18px;
+}
+
+.navbar-nav .active > .nav-link{
+
+    width:100%;
+    height:51px;
+
+  border-bottom: .25rem solid transparent;
+  border-bottom-color: #7f12d8;
+  color: #7f12d8;
+  font-weight: bold;
+
+}
+
+
+.my_div{
+  margin-top: 150px;
+}
+
+/* Buildings Details */
+.building {
+    border-radius: 50%;
+  }
+
+/* Anime Intro */
+#animeIntro{
+    margin-top: 2rem;
+}
+
+.line{
+    border-top: 3px solid ;
+    width: 25%;
+    color: #390579
+}
+
+.line1{
+    border-top: 5px solid ;
+    width: 90%;
+    color: #390579
+}
+
+.row{
+    margin: auto;
+}
+
+
+/* Anime Details */
+#page1show,#page2show,#page3show{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* Anime Details Pages */
+.pagination{
+    margin: 2rem;
+}
+
+#photo{
+    margin-top: 100px;
+}
+
+/* footer */
+footer{
+    background-color:rgb(255,255,255,0.5) ;
+    color: #CD9B9B;
+    padding-top: 1rem;
+    margin-top: 2rem;
+}
+
+.bi-instagram,.bi-twitter,.bi-whatsapp{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.bi-facebook{
+    padding-right: 1rem;
+}
+
+a:link {
+    text-decoration: none;
+    color: #a79292;
+  }
+a:hover {
+    color: rgb(54, 30, 54);
+    font-weight: bolder;
+  }
+
+/* Repre Director */
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:2rem;
+}
+
+#profile1{
+    /* position: relative; */
+    width: 300px;height: 350px;
+    /* 这里改图 */
+    background:url("img/hobbies/纪录片1.jpg");
+    background-size: cover;
+    cursor: pointer;
+    border: 12px;
+    border-top-right-radius: 35px !important;
+    border-radius: 6px;
+}
+#profile2{
+    /* position: relative; */
+    width: 300px;height: 350px;
+    /* 这里改图 */
+    background:url("img/hobbies/纪录片2.jfif");
+    background-size: cover;
+    cursor: pointer;
+    border: 12px;
+    border-top-right-radius: 35px !important;
+    border-radius: 6px
+}
+#profile3{
+    /* position: relative;s */
+    width: 300px;height: 350px;
+    /* 这里改图 */
+    background:url("img/hobbies/纪录片3.jpg");
+    background-size: cover;
+    cursor: pointer;
+    border: 12px;
+    border-top-right-radius: 35px !important;
+    border-radius: 6px
+}
+#profile4{
+    /* position: relative;s */
+    width: 300px;height: 350px;
+    /* 这里改图 */
+    background:url("img/hobbies/纪录片4.jfif");
+    background-size: cover;
+    cursor: pointer;
+    border: 12px;
+    border-top-right-radius: 35px !important;
+    border-radius: 6px
+}
+#profile5{
+    /* position: relative;s */
+    width: 300px;height: 350px;
+    /* 这里改图 */
+    background:url("img/hobbies/纪录片5.webp");
+    background-size: cover;
+    cursor: pointer;
+    border: 12px;
+    border-top-right-radius: 35px !important;
+    border-radius: 6px
+}
+#profile6{
+    /* position: relative;s */
+    width: 300px;height: 350px;
+    /* 这里改图 */
+    background:url("img/hobbies/纪录片6.jpg");
+    background-size: cover;
+    cursor: pointer;
+    border: 12px;
+    border-top-right-radius: 35px !important;
+    border-radius: 6px
+}
+.overlay{
+    width: 100%;height: 100%;
+    background:#281f18c1;
+    border-radius: 12px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 1s;
+    border-top-right-radius: 35px !important;
+    border-radius: 6px
+}
+
+.profile:hover .overlay{opacity: 1}
+
+.overlay .about{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top:40%;
+    color: #F5EBCF;
+    flex: column}
+
+
+
+
+/* info intro */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.info_section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply;
+    z-index: 2;
+    border-radius: 5px;}
+
+.info_header{
+    position: relative;
+    padding: 20px;
+    height: 40%;}
+    h3{
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    text-align: center;
+    }
+    h4{
+    font-weight: 80;
+    font-size: 50px;
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    color:#8B658B;
+    }
+    .locandina{
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    height: 120px;
+    box-shadow: 0 0 20px -10px rgba(0,0,0,0.5)
+    }
+.info_desc{
+    padding: 20px;
+    height: 60%;}
+    .text{
+    color: #414347;
+
+    }
+.blur_back{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%; right: 0;
+    background-size: cover;
+    border-radius: 11px;
+}
+
+@media screen and (min-width: 768px) {
+    .info_header{
+    width: 80%;
+    text-align: inherit;
+    }
+
+    .info_desc{
+    width: 90%;
+    text-align:inherit;
+    }
+
+    .info_section{
+    background: linear-gradient(to right, #e5e6e6 50%, transparent 100%);
+    }
+
+    .blur_back{
+    width: 80%;
+    background-position: -100% 10% !important;
+    }
+}
+  .info_card{
+    width: 70%;
+    margin: 70px;
+    min-height: 350px;
+    height: auto;
+  }
+
+@media screen and (max-width: 768px) {
+    .info_card{
+    width: 90%;
+    margin: 70px auto;
+    min-height: 350px;
+    height: auto;
+    }
+
+    .blur_back{
+    width: 100%;
+    background-position: 50% 50% !important;
+    }
+
+    .info_header{
+    width: 100%;
+    margin-top: 85px;
+    }
+
+    .info_desc{
+    width: 100%;
+    }
+
+    .info_section{
+    background: linear-gradient(to top, #e5e6e6 50%, transparent 100%);
+    display: inline-grid;
+    }
+}
+
+/* minigame bg */
+
+
+    .square{
+        font-size: 24px;
+        font-weight: bold;
+        padding: 2rem;
+    }
+
+/* page */
+.pagination-outer{ text-align: center; }
+.pagination{
+    font-family: 'Poppins', sans-serif;
+    display: inline-flex;
+    position: relative;
+}
+.pagination li a.page-link{
+    color: #fff;
+    background: #eee;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    margin: 0 5px;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.pagination li a.page-link:hover,
+.pagination li a.page-link:focus,
+.pagination li.active a.page-link:hover,
+.pagination li.active a.page-link{
+    color: #fff;
+    background: #D9D2B6;
+    line-height: 25px;
+}
+.pagination li a.page-link:before,
+.pagination li a.page-link:after{
+    content: '';
+    background-color: #9f9a86;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 0.3s ease 0s;
+}
+.pagination li a.page-link:after{ background-color: #9f9a86; }
+.pagination li a.page-link:hover:before,
+.pagination li a.page-link:focus:before,
+.pagination li.active a.page-link:hover:before,
+.pagination li.active a.page-link:before{
+    top: -4px;
+}
+.pagination li a.page-link:hover:after,
+.pagination li a.page-link:focus:after,
+.pagination li.active a.page-link:hover:after,
+.pagination li.active a.page-link:after{
+    top: -8px;
+}
+@media only screen and (max-width: 480px){
+    .pagination{
+        font-size: 0;
+        display: inline-block;
+    }
+    .pagination li{
+        display: inline-block;
+        vertical-align: top;
+        margin: 10px 0;
+    }
+}
+
+/* section reveal */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+
+/* zoom effect */
+.zoom {
+    transition: transform .2s;
+  }
+
+  .zoom:hover {
+    transform: scale(1.1);
+  }
+
+  .btn1{
+    transform: translateX(-50%);
+    border: 2px solid #fff;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 0.5rem 0.7em;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    transition: all .3s;
+    z-index: 11;
+  }

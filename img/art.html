@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Personal CV</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="cvPerson.css">
+        <script src="cvPerson.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.11.0/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <style>
+            body{
+                /* background-color:#CD9B9B; */
+                background-image:url(img/壁纸/壁纸3.png);
+
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top" id="bar">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home Page</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mycv.html">About Me</a>
+              </li>
+              <li class="active">
+                  <a class="nav-link" href="art.html">My Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hobbies.html">My Hobbies</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- 作品一 -->
+    <div class="container-fluid reveal active">
+        <div class="mt-5 pt-5 rounded text-center">
+            <h1 class="display-6" style="margin: top 10rem;font-family:'ZhanKuKuaiLeTi2016XiuDingBan-1';font-weight:bolder;color:white">摄影作品</h1>
+            <center>
+                <hr class="line">
+            </center>
+        </div>
+        <div class="container">
+            <div class="row pt-5">
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></li>
+                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></li>
+                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/photograph/人像2.JPG" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Portrait photography</h5>
+                      <p>湖边 阳光 少女</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/photograph/人像1.JPG" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Portrait photography</h5>
+                      <p>柳叶 草地 春天</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/photograph/人像3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Portrait photography</h5>
+                      <p>秋日 暖阳 红叶</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/photograph/人像4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Portrait photography</h5>
+                      <p>光影 树林 简单</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/photograph/风景1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Landscape photography</h5>
+                      <p>落日 江水 晚霞</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/photograph/风景2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Landscape photography</h5>
+                      <p>灯影 倒影 光影</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 作品二 -->
+    <div class="container-fluid reveal active">
+        <div class="mt-5 pt-5 rounded text-center">
+            <h1 class="display-6" style="margin: top 10rem;font-family:'ZhanKuKuaiLeTi2016XiuDingBan-1'; font-weight:bolder;color:white">PS作品</h1>
+            <center>
+                <hr class="line">
+            </center>
+        </div>
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="card" style="width: 18rem;height:18rem">
+                  <img src="img/ps/星空2.png" height="400px"class="card-img-top" alt="星空">
+                  <div class="card-body">
+                    <p class="card-text">用ps滤镜和3d做的简单效果</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="card" style="width: 18rem;height:18rem">
+                    <img src="img/ps/气泡.png"height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">跟着教学视频做的练习</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="card" style="width: 18rem;height:21.5rem;background-color:transparent;border:0px;">
+                    <img src="img/ps/夜色雪景.gif" height="400px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">简单雪景动图</p>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="card" style="width: 18rem;height:18rem">
+                    <img src="img/ps/字体.png"height="300px"class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">第一次做出的铝箔字体的效果</p>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 作品三 -->
+    <div class="container-fluid reveal active">
+        <div class="mt-5 pt-5 rounded text-center">
+            <h1 class="display-6" style="margin: top 10rem;font-family:'ZhanKuKuaiLeTi2016XiuDingBan-1'; font-weight:bolder;color:white">广告策划作品</h1>
+            <center>
+                <hr class="line">
+            </center>
+        </div>
+        <div class="container">
+            <div class="row pt-5 mx-auto">
+              <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card mb-3 mx-auto" style="margin:20px;">
+                  <div class="row g-0 ">
+                    <div class="col-md-4">
+                      <img src="img/策划/1.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">萂而不同</h5>
+                        <br>
+                        <p class="card-text">这是小组做的关于和其正新品萂茶的广告策划案。通过“萂而不同”的理念，与Z世代消费者形成情感连接。敢于做不同的自己，敢于遵循自己个性的生活方式。“萂”而不同，做自己。</p>
+
+                        <p class="card-text"><small class="text-body-secondary">小组作业</small></p>
+                        <a href="img/策划/1.pdf"><button type="button" class="btn btn-outline-warning" </button>Details</a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card mb-3 mx-auto" style="margin:20px">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/策划/2.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">45度攀登</h5>
+                      <br>
+                      <p class="card-text">这是关于松能支架的广告营销策划案。通过松能支架旋转角度，想出45度攀登，在卷与躺中找到平衡点。45度，不是90度，也不是0度。这个一个让自己舒服的积极的向上攀登的角度。</p>
+                      <p class="card-text"><small class="text-body-secondary">小组作业</small></p>
+                      <a href="img/策划/2.pdf"><button type="button" class="btn btn-outline-success">Details</button></a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 作品四 -->
+    <div class="container-fluid reveal active">
+        <div class="mt-5 pt-5 rounded text-center">
+            <h1 class="display-6" style="margin: top 10rem;font-family:'ZhanKuKuaiLeTi2016XiuDingBan-1'; font-weight:bolder;color:white">编辑推文</h1>
+            <center>
+                <hr class="line">
+            </center>
+        </div>
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src="img/编辑推文/排版1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">排版作品</h5>
+                      <p class="card-text">这篇推送里面包含班会回顾和读书会两篇排版。因为是班级性质，所以排版形式比较自由，发挥空间较大。</p>
+                      <a href="https://mp.weixin.qq.com/s/oSlmpjCae2BxFg8SRoKtTQ" class="btn btn-outline-warning">Details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src="img/编辑推文/编辑排版.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">《甄嬛传》为什么这么火？</h5>
+                      <p class="card-text">这是我参与量较大的一篇作品，主笔了文章，同时也参与了排版。这也是我第一篇关于传播学概论的作品。</p>
+                      <a href="https://mp.weixin.qq.com/s/FRPwDr3o4dMJBobQQsLMtg" class="btn btn-outline-dark">Details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src="img/编辑推文/编辑排版2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">“困”在胡同里的人</h5>
+                      <p class="card-text">困在北京胡同里的人是小组完成的一篇新闻采编工作的作品。我们实地考察了北京胡同的情况，并对发现的选题进行了编辑。</p>
+                      <a href="img/编辑推文/编辑排版2.pdf" class="btn btn-outline-info">Details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src="img/编辑推文/人口数据可视化.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">人口数据可视化</h5>
+                      <p class="card-text">通过官方人口数据，对中国第七次人口普查和世界人口变化做的数据可视化分析。其中运用了多种可视化图表。</p>
+                      <a href="https://dycharts.com/xshow/index.html?id=a271f905af01f0f1c137d8db4c1a33dc" class="btn btn-outline-success">Details</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <center><hr class="line1"></center>
+    <div style="text-align:center">
+      <a href="hobbies.html" class="btn1  col-2" style="font-size:20px;position:center"><b>More About Me</b></a>
+    </div>
+    <center><hr class="line1"></center>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+          // 初始化导航栏的折叠和展开功能
+          var navToggler = $('#bar .navbar-toggler');
+          var navMenu = $('#bar .navbar-collapse');
+
+          navToggler.on('click', function() {
+            navMenu.toggleClass('show');
+          });
+        });
+      </script>
+    </body>
+    <!-- Footer -->
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 col-md-4" style="padding-left:3rem;text-align:left ;">
+        <h5>
+            <img src="https://c-ssl.duitang.com/uploads/item/202006/22/20200622073357_jyhsk.jpg" width="50px" height="50px">
+          <strong>Personal CV</strong>
+        </h5>
+        <h6 class="pt-3">
+          <a href="index.html">Home Page</a> |
+          <a href="mycv.html">About Me</a> |
+          <a href="art.html">My Works</a> |
+          <a href="hobbies.html">My Hobbies</a>
+        </h6>
+        <h6 style="color:#8B658B;">2023-06</h6><br>
+      </div>
+      <div class="col-md-4 pt-3 pb-3" style="padding-left:3rem;text-align:left">
+        <h6 style="padding-bottom:1rem"><i class="bi bi-geo-alt-fill"><span style="padding-left: 1rem;">中国传媒大学</span></i></h6>
+        <h6 style="padding-bottom:1rem"><i class="bi bi-telephone-fill"></i><span style="padding-left: 1rem;">153xxxxxxxx</span></i></h6>
+        <h6 style="padding-bottom:1rem"><i class="bi bi-envelope-fill"><span style="padding-left: 1rem;">freefish@qq.com</span></i></h6>
+
+      </div>
+      <div class="col-md-4 pt-3 pb-4" style="padding-left:3rem;padding-right:3rem;text-align:left">
+        <h5>About Me</h5>
+        <h6 style="color:#8B658B ;padding-bottom: 1rem;font-family:SimSun">一个多愁善感的浪漫主义者。希望通过自己的感受去探索不同于自己世界的世界。<br>一个坚定谨慎的INFJ，愿望是世界和平。</h6>
+        <a href="#"><i class="bi bi-facebook" href="#"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+    </div>
+  </div>
+</footer>
+</html>
